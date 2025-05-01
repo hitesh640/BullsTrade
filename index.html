@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Trading Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Stock Trading Platform</h1>
+    </header>
+    <main>
+        <section id="stocks">
+            <h2>Stock Prices</h2>
+            <table id="stockTable">
+                <tr>
+                    <th>Stock</th>
+                    <th>Price</th>
+                    <th>Change</th>
+                    <th>Action</th>
+                </tr>
+            </table>
+        </section>
+        <section id="trade">
+            <h2>Trade Stocks</h2>
+            <form id="tradeForm">
+                <label for="stockName">Stock Name:</label>
+                <input type="text" id="stockName" required>
+                
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" required>
+                
+                <button type="submit">Buy/Sell</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
